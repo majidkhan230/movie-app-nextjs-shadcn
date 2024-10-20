@@ -3,7 +3,8 @@ import logo from "@/public/assets/images/logo.jpg";
 import React from "react";
 import Link from "next/link";
 import GenreDropdown from "./GenreDropdown";
-import SearchInput from "./SearchInput";
+import SearchInput from "./SearchInput.jsx";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
       <div className=" flex gap-4">
         <GenreDropdown />
         <SearchInput />
-        <div className="theme">Theme</div>
+       <ThemeToggle/>
       </div>
     </div>
   );
